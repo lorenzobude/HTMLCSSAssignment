@@ -1,0 +1,134 @@
+
+/* Import Google Fonts (Roboto) */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* General */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #3882F6;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2C6CD3;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+.bg-dark {
+    background-color: #1F2937;
+}
+
+.bg-dark * {
+    color: #FFFFFF;
+}
+
+.bg-gray {
+    background-color: #E5E7EB;
+}
+
+.bg-accent {
+    background-color: #3882F6;
+    color: #FFFFFF;
+}
+
+.bg-accent * {
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+}
+
+
+/* Header */
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+
+/* Hero Section / Page Heading */
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+@media (min-width: 1200px) {
+
+    .home-hero-container {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .home-hero-text {
+        flex: 1;
+    }
+
+    .home-hero-image {
+        flex: 1;
+    }
+
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0 0 1em 0;
+}
