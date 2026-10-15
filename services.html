@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <!-- Logo and navigation here -->
+    <header class="bg-dark">
+        <div class="container header-container">
+            <!-- where i can put toggle button for mobile navigation -->
+            <!-- <button class="nav-toggle btn" aria-label="Toggle navigation"> -->
+                
+                <!-- <i class="fas fa-bars"></i> -->
+                <!-- <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button> -->
+
+                <!-- CSS-only toggle checkbox -->
+                <!-- <input
+                    type="checkbox"
+                    id="nav-checkbox"  class="nav-checkbox"
+                > -->
+                
+                <!-- Hamburger button, outside nav -->
+                <!-- <label for="menu" class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label> -->
+
+
+            <nav class="nav-container">
+                <!-- Logo and navigation here -->
+                <a href="index.html" class="header-logo">The Tech Agency</a>
+                <!-- CSS-only toggle checkbox -->
+                <input
+                    type="checkbox"
+                    id="nav-checkbox"  class="nav-checkbox"
+                >
+                
+                <!-- Hamburger button, outside nav -->
+                <label for="nav-checkbox" class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="nav-links">
+                    <li class="hero-secondary-text"><a href="index.html">Home</a></li>
+                    <li class="hero-secondary-text"><a href="about.html">About Us</a></li>
+                    <li class="hero-secondary-text"><a href="services.html">Services</a></li>
+                </ul>
+
+
+            </nav>
+
         </div>
     </header>
     <main>
@@ -18,10 +61,50 @@
                 <h1>Services</h1>
             </div>
         </section>
+        <section >
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>Details about the services offered by The Tech Agency.</p>
+            </div>
+            <div class="service">
+                
+                <h3>mobile app development</h3>
+                <p>Description of Service 1.</p>
+
+            </div>
+            <div class="service">
+                <h3>web development</h3>
+                <p>Description of Service 2.</p>
+            </div>
+            <div class="service">
+                <h3>digital marketing</h3>
+                <p>Description of Service 3.</p>
+            </div>
+            <div class="services">
+                <h3>devops</h3>
+                <p>Description of Service 4.</p>
+            </div>
+            <!-- service claude -->
+             <div class="service">
+                <h3>cloud services</h3>
+                <p>Description of Service 5.</p>
+             </div>
+
+        </section>
+            
+        </section>
+
+
+
     </main>
-    <footer>
-        <div class="container">
-            Copyright &copy; 2026 - The Tech Agency
+    <footer class="footer">
+        <div class="container footer-container">
+            <ul class="footer-links">
+                <p class="footer-copy">Copyright &copy; 2026 - The Tech Agency</p>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
         </div>
     </footer>
 </body>

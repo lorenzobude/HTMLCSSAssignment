@@ -1,0 +1,493 @@
+
+/* Import Google Fonts (Roboto) */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* General */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #3882F6;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2C6CD3;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+.bg-dark {
+    background-color: #1F2937;
+}
+
+.bg-dark * {
+    color: #FFFFFF;
+}
+
+.bg-gray {
+    background-color: #E5E7EB;
+}
+
+.bg-accent {
+    background-color: #3882F6;
+    color: #FFFFFF;
+}
+
+.bg-accent * {
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+/* Navigation */
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    /* add */
+    position: relative; /* anchor for absolute dropdown */
+}
+
+/* Mobile & Tablet: Hide nav by default */
+/* .nav-container {
+    display: none;
+    width: 100%;
+} */
+
+.nav-toggle {
+    /* display: block; */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border-radius: 9px;
+    background-color:bisque;
+}
+
+.nav-toggle:hover {
+    background-color: rgb(167, 162, 156);
+}
+
+
+
+
+
+
+
+.nav-links {
+    display: none;
+}
+
+/* add  */
+
+.nav-links {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* top: 100%; */
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 1em 0;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 95%;
+    border-radius: 7px;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+}
+
+
+.nav-toggle {
+    display: block;
+}
+
+/* add */
+
+/* visually-hidden, NOT display:none - keeps label click working */
+.nav-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* toggle ON */
+#nav-checkbox:checked ~ .nav-links {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* end of add */
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    /* text-decoration: underline; */
+    color: #3882F6;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+
+/* Tablet Navigation */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+    
+
+    /* add */
+    .header-container {
+        width: 100%;
+    }
+
+    ul a {
+        padding: 0px;
+    }
+
+    .nav-links {
+        /* display: block; */
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        padding: 1em 0;
+        gap: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+
+        width: 95%;
+        border-radius: 7px;
+        /* margin: 0px 10px;        */
+        margin: 0rem; 
+        opacity: 0;
+        visibility: hidden;
+        /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+        /* z-index: 1; */
+    }
+
+    
+
+    .nav-links li {
+        padding: 10px;
+    }
+
+    .nav-links a {
+        width: 100%;
+        height: 30px;
+    }
+
+    .nav-toggle {
+        display: block;
+
+    }
+
+    .nav-checkbox {
+        /* display: none; */
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #nav-checkbox:checked ~ .nav-links {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}
+
+
+
+/* ======= desktop navigation ======= */
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+
+
+    
+
+    .header-container {
+        width: 100%;
+    }
+
+    .nav-links{
+        display: block;
+        list-style: none;
+        display : flex;
+        flex: 1;
+        position: static;        /* Reset tablet positioning */
+        top: auto;
+        left: auto;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        /* non background color for desktop */
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    ul a {
+        padding: 0 30px;
+    }
+
+    /* ADD */
+    /* #nav-checkbox { */
+    .nav-checkbox {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #FFF;
+        transition: color 0.2s ease;
+    }
+
+
+}
+
+
+/* Header */
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+
+    /* add */
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Hero Section / Page Heading */
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+@media (min-width: 1200px) {
+
+    .home-hero-container {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .home-hero-text {
+        flex: 1;
+    }
+
+    .home-hero-image {
+        flex: 1;
+    }
+
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0 0 1em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop first approach */
+
+
+/* media queries */
+
+
+/* Mobile Navigation */
+/* @media (max-width: 375px) {
+  .nav-container {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+} */
+
+
+/* tablet navigation */
+/* TABLETTE  between 376px and 1199px */
+/* @media (max-width: 1199px) and (min-width: 376px) { */
+/* @media (max-width: 1199px) {
+  .nav-container {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+} */
+
+
+
+
+/* footer  here */
+
+/* footer mobile */
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto; /* sticks to bottom */
+}
+
+.footer-container {
+    display: flex; flex-direction: column;
+    align-items: center; gap: 1em;
+}
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column;
+    gap: 0.75em;
+}
+.footer-links a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+.footer-links a:hover { color: #3882F6; }
+.footer-copy {
+    margin: 0;
+    font-size: 14px;
+    color: #E5E7EB;
+}
+
+
+/* footer tablet */
+
+@media (min-width: 768px) {
+
+/* here */
+    .footer-links {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
+}
+
+
+/* footer desktop */
+
+@media (min-width: 1200px) {
+
+/* here */
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .footer-copy { 
+        text-align: right;
+    }
+
+
+}
