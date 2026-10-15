@@ -7,28 +7,31 @@
 
     <title>About Us | The Tech Agency</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">The Tech Agency</a>
+    <div class="container">
+        <a href="index.html" class="logo">The Tech Agency</a>
 
-            <nav aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html" aria-current="page">About Us</a>
-            </nav>
-        </div>
-    </header>
+        <input type="checkbox" id="menu-toggle">
 
+        <label for="menu-toggle" class="menu-icon">
+            ☰
+        </label>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html" aria-current="page">About Us</a>
+        </nav>
+    </div>
+</header>
     <main>
 
-        <!-- Hero Section -->
         <section class="bg-dark about-hero">
             <div class="container">
                 <h1>About The Tech Agency</h1>
@@ -41,7 +44,6 @@
             </div>
         </section>
 
-        <!-- Our Story -->
         <section class="our-story">
             <div class="container">
                 <h2>Who We Are</h2>
@@ -49,62 +51,39 @@
                 <p>
                     The Tech Agency is a technology company focused on helping
                     businesses build a strong digital presence.
-                    We create modern websites and digital solutions designed
-                    to make everyday business tasks easier and more efficient.
-                    Our goal is to combine creativity, technology and
-                    user-friendly design to deliver meaningful results.
+                    We believe technology should be useful, accessible,
+                    and easy to understand.
                 </p>
             </div>
         </section>
 
-        <!-- Our Mission -->
-        <section class="our-mission">
-            <div class="container">
-                <h2>Our Mission</h2>
-
-                <p>
-                    Our mission is to make technology accessible and useful
-                    for every business. We aim to turn complex ideas into
-                    simple, effective and user-friendly digital experiences.
-                </p>
-            </div>
-        </section>
-
-        <!-- Our Values -->
         <section class="our-values">
             <div class="container">
                 <h2>Our Values</h2>
-
-                <p class="values-intro">
-                    The principles that guide everything we do.
-                </p>
 
                 <div class="values-container">
 
                     <article class="value-card">
                         <h3>Innovation</h3>
-
                         <p>
-                            We explore new ideas and creative approaches
-                            to develop modern digital solutions.
+                            We explore creative ideas to develop useful
+                            digital solutions.
                         </p>
                     </article>
 
                     <article class="value-card">
                         <h3>Simplicity</h3>
-
                         <p>
-                            We believe technology should be easy to use.
-                            We focus on clear designs and simple experiences.
+                            We create clear and user-friendly
+                            digital experiences.
                         </p>
                     </article>
 
                     <article class="value-card">
                         <h3>Collaboration</h3>
-
                         <p>
-                            We work together, listen to our clients
-                            and turn shared ideas into successful projects.
+                            We believe great results come from
+                            working together.
                         </p>
                     </article>
 
@@ -112,17 +91,13 @@
             </div>
         </section>
 
-        <!-- Call to Action -->
         <section class="about-cta">
             <div class="container">
-                <h2>Let's Build Something Great Together</h2>
+                <h2>Have a project in mind?</h2>
 
-                <p>
-                    Have an idea or a project in mind?
-                    Explore our services and discover how we can help.
-                </p>
+                <p>Let's build something great together.</p>
 
-                <a href="services.html" class="btn btn-outline">
+                <a href="services.html" class="cta-button">
                     Explore Our Services
                 </a>
             </div>
@@ -130,7 +105,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2026 The Tech Agency. All rights reserved.</p>

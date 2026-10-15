@@ -132,3 +132,73 @@ h2 {
     color: #1F2937;
     margin: 0 0 1em 0;
 }
+/* Navigation Bar */
+header {
+    background-color: #1F2937;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    color: #F9FAF8;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+}
+
+header nav a {
+    color: #F9FAF8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #3882F6;
+}
+
+/* CSS-only Burger Menu */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: #F9FAF8;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+}
