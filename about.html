@@ -1,28 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    
+    <title>About Us | The Tech Agency</title>
+    
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <!-- Logo and navigation here -->
+
+    <header class="bg-dark">
+        <div class="container header-container">
+
+            <nav class="nav-container">
+                <a href="index.html" class="header-logo">The Tech Agency</a>
+                <input
+                    type="checkbox"
+                    id="nav-checkbox"  class="nav-checkbox"
+                >
+                
+                <label for="nav-checkbox" class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="nav-links">
+                    <li class="hero-secondary-text"><a href="index.html">Home</a></li>
+                    <li class="hero-secondary-text"><a href="about.html">About Us</a></li>
+                    <li class="hero-secondary-text"><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="bg-dark">
+
+        <section class="bg-dark about-hero">
             <div class="container">
-                <h1>About Us</h1>
+                <h1>About The Tech Agency</h1>
+
+                <p>
+                    Turning ideas into digital experiences.
+                    We help businesses grow with creative and reliable
+                    technology solutions.
+                </p>
             </div>
         </section>
+
+        <section class="our-story">
+            <div class="container">
+                <h2>Who We Are</h2>
+
+                <p>
+                    The Tech Agency is a technology company focused on helping
+                    businesses build a strong digital presence.
+                    We believe technology should be useful, accessible,
+                    and easy to understand.
+                </p>
+            </div>
+        </section>
+
+        <section class="our-values">
+            <div class="container">
+                <h2>Our Values</h2>
+
+                <div class="values-container">
+
+                    <article class="value-card">
+                        <h3>Innovation</h3>
+                        <p>
+                            We explore creative ideas to develop useful
+                            digital solutions.
+                        </p>
+                    </article>
+
+                    <article class="value-card">
+                        <h3>Simplicity</h3>
+                        <p>
+                            We create clear and user-friendly
+                            digital experiences.
+                        </p>
+                    </article>
+
+                    <article class="value-card">
+                        <h3>Collaboration</h3>
+                        <p>
+                            We believe great results come from
+                            working together.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about-cta">
+            <div class="container">
+                <h2>Have a project in mind?</h2>
+
+                <p>Let's build something great together.</p>
+
+                <a href="services.html" class="cta-button">
+                    Explore Our Services
+                </a>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <div class="container">
-            Copyright &copy; 2026 - The Tech Agency
+    <footer class="footer">
+        <div class="container footer-container">
+            <ul class="footer-links">
+                <div class="footer-copy">
+                    <p>Copyright &copy; 2026 - The Tech Agency</p>
+                </div>
+                <div class="footer-links-extra">
+                    <li class="quote-text"><a href="index.html">Home</a></li>
+                    <li class="quote-text"><a href="about.html">About</a></li>
+                    <li class="quote-text"><a href="services.html">Services</a></li>
+                </div>
+            </ul>
         </div>
     </footer>
+
 </body>
+
 </html>

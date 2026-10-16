@@ -1,0 +1,110 @@
+/* About Us Page */
+
+/* Hero Section */
+.about-hero {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Our Story */
+.our-story {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.our-story h2,
+.our-values h2 {
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+}
+
+/* Our Values */
+.our-values {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #E5E7EB;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    flex: 1;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #1F2937;
+}
+
+.value-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Call to Action */
+.about-cta {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-cta h2 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.about-cta p {
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3882F6;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2C6CD3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .values-container {
+        flex-direction: column;
+    }
+
+    .value-card {
+        width: auto;
+    }
+}
