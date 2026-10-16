@@ -1,0 +1,111 @@
+/* Hero Section / Page Heading */
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.home-hero-text {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+
+    .home-hero-container {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .home-hero-text {
+        flex: 1;
+    }
+
+    .home-hero-image {
+        flex: 1;
+    }
+
+}
+
+
+/* Information section */
+
+.information-card {
+    text-align: center;
+}
+
+.information-visual {
+    aspect-ratio: 4 / 3;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+ 
+    .information-grid {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .information-card {
+        flex: 1;
+    }
+    
+}
+
+
+/* Quote section */
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0 0 2rem;
+}
+
+.quote-text + .person {
+    text-align: right;
+    font-size: 18px;
+    color: #1F2937;
+    margin: 0 0 2rem;
+}
+
+
+/* Get Started section */
+
+.get-started-container {
+    text-align: center;
+}
+
+.get-started-inner {
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.get-started-container h2 {
+    margin: 0 0 .5rem;
+}
+
+@media (min-width: 1200px) {
+ 
+    .get-started-container {
+        width: 992px;
+        text-align: left;
+    }
+
+    .get-started-inner {
+        padding: 2rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+    }
+}

@@ -18,6 +18,7 @@ section {
 .container {
     max-width: 375px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 h2 {
@@ -68,9 +69,14 @@ h2 {
     color: #FFFFFF;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-
-
+.text-center {
+    text-align: center;
+}
 
 
 /* navigation */
@@ -276,17 +282,20 @@ li a:hover {
         justify-content: space-around;
         width: 100%;
         gap: 2rem;
+        align-items: center;
     }
 
     .footer-links li {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
     .footer-links-extra {
         display: flex;
         gap: 1rem;
+        align-items: center;
     }
     /* end of footer */
     
@@ -384,49 +393,6 @@ li a:hover {
 
     /* add */
     text-decoration: none;
-}
-
-
-
-
-
-
-/* Hero Section / Page Heading */
-
-.hero-section h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
-}
-
-.hero-secondary-text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-@media (min-width: 1200px) {
-
-    .home-hero-container {
-        display: flex;
-        align-items: center;
-        gap: 5rem;
-    }
-
-    .home-hero-text {
-        flex: 1;
-    }
-
-    .home-hero-image {
-        flex: 1;
-    }
-
-}
-
-.quote-text {
-    font-size: 36px;
-    font-weight: lighter;
-    font-style: italic;
-    color: #1F2937;
 }
 
 

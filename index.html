@@ -44,29 +44,55 @@
                     <a href="about.html" class="btn">More About Us</a>
                 </div>
                 <div class="home-hero-image">
-                    (Hero image here)
+                    <picture>
+                        <source srcset="images/hero-image.webp" type="image/webp" />
+                        <img src="images/hero-image.jpg" alt="Hero Image" loading="lazy" />
+                    </picture>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <h2>Our Services</h2>
-                <p>We offer a wide range of technology solutions to meet your business needs.</p>
+        <section class="information-section">
+            <div class="container information-container">
+                <h2 class="text-center">Some random information.</h2>
+                <div class="information-grid">
+                    <article class="information-card">
+                        <div class="information-visual"></div>
+                        <p>This is some subject under an illustration or image</p>
+                    </article>
+                    <article class="information-card">
+                        <div class="information-visual"></div>
+                        <p>This is some subject under an illustration or image</p>
+                    </article>
+                    <article class="information-card">
+                        <div class="information-visual"></div>
+                        <p>This is some subject under an illustration or image</p>
+                    </article>
+                    <article class="information-card">
+                        <div class="information-visual"></div>
+                        <p>This is some subject under an illustration or image</p>
+                    </article>
+                </div>
             </div>
         </section>
         <section class="bg-gray">
             <div class="container">
                 <blockquote class="quote-text">
-                    "Innovation distinguishes between a leader and a follower."
+                    "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. And, like any great relationship, it just gets better and better as the years roll on."
                 </blockquote>
-                - Steve Jobs
+                <div class="person">- Steve Jobs</div>
             </div>
         </section>
-        <section class="bg-accent">
-            <div class="container">
-                <h2>Get Started with Us</h2>
-                <p>Ready to take your business to the next level? Contact us today to get started.</p>
-                <a href="#" class="btn btn-outline">Contact Us</a>
+        <section>
+            <div class="container get-started-container">
+                <div class="get-started-inner bg-accent">
+                    <div class="get-started-text">
+                        <h2>Get Started with Us</h2>
+                        <p>Ready to take your business to the next level? Contact us today to get started.</p>
+                    </div>
+                    <div class="get-started-action">
+                        <a href="#" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
