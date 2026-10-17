@@ -312,7 +312,19 @@ li a:hover {
     }
 
 
+    .home-hero-container {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
 
+    .home-hero-text {
+        flex: 1;
+    }
+
+    .home-hero-image {
+        flex: 1;
+    }
     
     
     .header-container {
@@ -394,6 +406,13 @@ li a:hover {
     /* add */
     text-decoration: none;
 }
+
+
+
+
+
+
+
 
 
 

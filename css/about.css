@@ -94,6 +94,30 @@
     background-color: #2C6CD3;
 }
 
+
+
+/* Hero Section / Page Heading */
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0 0 2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-hero h1 {
