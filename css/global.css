@@ -303,7 +303,19 @@ li a:hover {
     }
 
 
+    .home-hero-container {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
 
+    .home-hero-text {
+        flex: 1;
+    }
+
+    .home-hero-image {
+        flex: 1;
+    }
     
     
     .header-container {
@@ -404,23 +416,6 @@ li a:hover {
     color: #E5E7EB;
 }
 
-@media (min-width: 1200px) {
-
-    .home-hero-container {
-        display: flex;
-        align-items: center;
-        gap: 5rem;
-    }
-
-    .home-hero-text {
-        flex: 1;
-    }
-
-    .home-hero-image {
-        flex: 1;
-    }
-
-}
 
 .quote-text {
     font-size: 36px;
