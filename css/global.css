@@ -18,7 +18,7 @@ section {
 .container {
     max-width: 375px;
     margin: 0 auto;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 h2 {
@@ -194,7 +194,7 @@ li a:hover {
 .footer-links a {
     color: #E5E7EB;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
 }
 .footer-links a:hover 
 {
